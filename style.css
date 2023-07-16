@@ -18,9 +18,9 @@ body {
     color: #FFF;
     text-align: center;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #FF900E;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -67,11 +67,12 @@ nav li a {
 .banner-content {
     max-width: 50rem;
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 
 .banner-title {
+    margin-top: 5rem;
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
@@ -79,7 +80,82 @@ nav li a {
 
 
 .banner-description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+.banner img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+
+/* Responsive media queries  */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        flex-direction: column;
+
+    }
+
+    nav li {
+        margin-top: 30px;
+
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .btn-primary {
+        padding: 16px;
+        text-align: center;
+        border: none;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+
+/* tablet or medium device  */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-top: 30px;
+
+    }
+
+    header {
+        padding: 50px;
+    }
+
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .btn-primary {
+        padding: 20px;
+        text-align: center;
+        border: none;
+    }
 }
